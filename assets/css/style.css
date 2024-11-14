@@ -94,12 +94,17 @@ body {
 
 /* Hero Section */
 .main {
-  background: linear-gradient(
+  /* background: linear-gradient(
     135deg,
     rgba(255, 182, 193, 0.6) 20%,
     rgba(255, 228, 225, 0.4) 50%,
     rgba(238, 130, 238, 0.6) 80%
-  );
+  ); */
+  background-image: url(../images/Content\ \(1\).png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
   position: relative;
   z-index: 1;
   display: flex;
@@ -632,6 +637,10 @@ body {
   box-shadow: 0px 15px 50px 0px rgba(0, 0, 0, 0.15);
   padding: 15px 40px;
 }
+.appointment-text a:hover{
+background-color: var(--secondary-color);
+color: #fff;
+}
 /* Appointment Section End */
 
 /* ASked Section */
@@ -704,7 +713,296 @@ body {
 font-size: 2rem;
 font-weight: 400;
 }
+.NewsLetter .form{
+  margin-top: 35px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 15px 50px 0px rgba(0, 0, 0, 0.15);
+  padding: 17px 45px 17px 25px;
+}
+.NewsLetter .form input{ 
+  border: none;
+ box-shadow: none;
+}
+.NewsLetter .form input::placeholder{ 
+  color: var(--text-color);
+  font-family: "Quicksand", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+.NewsLetter .form .btn{
+  border-radius: 10px;
+background: var(--primary-color);
+box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.20);
+padding: 10px 40px 10px 40px;
+color: #fff;
+font-family: "Quicksand", sans-serif;
+font-size: 18px;
+font-weight: 500;
+}
+.NewsLetter .form .btn:hover{
+  background-color: var(--secondary-color);
+}
 /* NewsLetter End */
+/* Homepage End */
+
+
+/* About Us */
+/* Hero Section */
+.About-us .hero-text{
+  position: relative;
+  z-index: 1;
+}
+.About-us .hero-text h1 {
+font-size: 3.5rem;
+}
+.About-us .hero-text h2 {
+  font-size: 3.5rem;
+  margin: 0px 0px 20px 0px;
+}
+.About-us .hero-text p {
+padding-right: 7rem;
+}
+.About-us .hero-text .btn {
+  padding: 10px 32px 10px 32px;
+}
+.About-us .about-usImg img{
+  /* background: linear-gradient(0deg, #6A6EEC 0%, #6A6EEC 100%), url(<path-to-image>) lightgray -106.103px 0px / 138.155% 100% no-repeat;
+background-blend-mode: hue, normal; */
+}
+/* Hero Section */
+
+/* Our Mission Section */
+.Our-mission{
+  padding: 60px 0 60px 0;
+  background: #EEE;
+} 
+.Our-mission .row{
+gap: 40px;
+}
+.Our-mission .mission-main h1{
+  color: var(--text-color);
+  font-family: "Hanken Grotesk", serif;
+  font-size: 3.5rem;
+  font-weight: 600;
+  padding-right: 2rem;
+}
+.Our-mission .mission-textMain{
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+}
+.Our-mission .mission-textMain .mission-text h1{
+  color: var(--text-color);
+  font-family: "Hanken Grotesk", serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.Our-mission .mission-textMain .mission-text p{
+  font-family: "Quicksand", sans-serif;
+  color: var(--text-color);
+  font-size: 1.2rem;
+}
+/* Our Mission Section End */
+
+/* Our Values Section */
+.Our-Values{
+  padding: 70px 0 70px 0;
+}
+.Our-Values .values-card{
+border-radius: 20px;
+background: rgba(255, 255, 255, 0.40);
+box-shadow: 0px 4px 12.3px 0px rgba(106, 110, 236, 0.25);
+height: 460px;
+position: relative;
+}
+
+.Our-Values .values-cardText{
+  padding: 0 50px 0 50px;
+  position: absolute;
+  text-align: center;
+  z-index: 1;
+  bottom: 30px;
+ display: flex;
+ flex-direction: column;
+ gap: 10px;
+}
+.Our-Values .values-cardText h1{
+  font-family: "Hanken Grotesk", serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+ color: var(--primary-color);
+}
+.Our-Values .values-cardText p{
+  font-family: "Quicksand", sans-serif;
+  color: var(--text-color);
+  font-weight: 500;
+}
+.Our-Values .values-card img{
+  position: absolute;
+bottom: 0%;
+right: 0;
+}
+.About-usCustomer{
+  background-color: #EEE;
+}
+/* Our Values Section End */
+
+/* About Us End */
+
+
+/* Contact Us */
+/* Hero Section */
+.contact-us h1{
+  font-family: "Hanken Grotesk", serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #211C70;
+  margin-bottom: 20px;
+}
+.contact-us p{
+  color: var(--text-color);
+  font-family: "Quicksand", sans-serif;
+}
+/* Hero Section End */
+
+/* Contact Form Section */
+.contact {
+  padding: 60px 0 80px 0;
+  position: relative;
+  z-index: 1;
+  margin-top: -23rem;
+}
+.contact .our-team{
+  border-radius: 28px;
+  background: #FFF;
+  box-shadow: 0px 32px 60px -20px rgba(148, 126, 168, 0.15);
+  padding: 30px 24px 30px 24px;
+   display: flex;
+   flex-direction: column;
+   gap: 44px;
+}
+.contact .our-teamText h4{
+  font-family: "Hanken Grotesk", serif;
+  color: #0D022B;
+  font-size: 20px;
+  font-weight: 500;
+  padding-bottom: 15px;
+}
+.contact .our-teamText p{
+  font-family: "Quicksand", sans-serif;
+  color: #575578;
+}
+.contact .our-teamText1 ul{
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+.contact .our-teamText1 li{
+  display: flex;
+  gap: 15px;
+}
+
+.contact .our-teamText1 li i::before{
+  color: #fff;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  font-size: 12px;
+  text-align: center;
+  padding: 7px;
+}
+.contact .our-teamText1 li p{
+  font-family: "Quicksand", sans-serif;
+  color: #0D022B;
+  font-weight: 500;
+}
+.contact .contact-form .first{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+.contact .contact-form .first1 ul{ 
+display: flex;
+align-items: center;
+margin: 0%;
+gap: 5px;
+border-right: 1px solid #E6E6E6;
+padding: 0 10px 0 8px;
+}
+.contact .contact-form .first1 ul li{ 
+color: #0D022B;
+font-size: 18px;
+font-family: "Quicksand", sans-serif;
+}
+.contact-form .first1 .number-field{
+  display: flex;
+align-items: center;
+border-radius: 14px;
+border: 1px solid #E6E6E6;
+}
+.contact-form .first1 input{
+  border: none !important;
+}
+.contact .contact-form .first label{
+  color: #575578;
+  font-family: "Quicksand", sans-serif;
+}
+.contact .contact-form input {
+  border-radius: 14px;
+  border: 1px solid #E6E6E6;
+  background: #FFF;
+  box-shadow: none !important;
+  padding: 15px 16px;
+}
+
+.contact .first .block {
+  width: 100%;
+  border: 1px solid #E6E6E6;
+  background: #FFF;
+  padding: 15px 16px;
+  border-radius: 14px;
+  color: #0D022B;
+  font-family: "Quicksand", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+.contact .first .dropdown ul {
+  width: 100% !important;
+  border-radius: 14px;
+  border: 1px solid #E6E6E6;
+}
+.contact .first textarea{
+  border-radius: 14px;
+  border: 1px solid #E6E6E6;
+  box-shadow: none;
+  resize: none;
+}
+.contact .btn{
+  padding: 12px 60px;
+  border-radius: 81px;
+background: var(--primary-color);
+box-shadow: 0px 12px 40px -8px rgba(31, 0, 55, 0.25);
+color: #fff;
+font-family: "Quicksand", sans-serif;
+font-weight: 600;
+margin-top: 20px;
+}
+.contact .btn:hover{
+  background-color: var(--secondary-color);
+}
+/* Contact Form Section End */
+
+/* Partners Section  */
+.contact-Partners{
+  background-color: #EEE;
+}
+/* Partners Section End */
+
+/* Contact Us End */
+
 
 /* Footer */
 .footer {
@@ -805,6 +1103,26 @@ font-weight: 400;
   .Customer .Customer-main h1 {
     font-size: 2.6rem;
   }
+  .appointment-text h1 {
+    font-size: 2.5rem;
+  }
+  .Pricing .nav-tabs .nav-link {
+    font-size: 20px;
+  }
+  .Pricing .accordion-item .accordion-button {
+    font-size: 22px;
+  }
+
+  .Our-mission .mission-main h1{
+    font-size: 2.6rem;
+  }
+  .Our-mission .mission-textMain .mission-text h1{
+    font-size: 1.5rem;
+  }
+  .Our-mission .mission-textMain .mission-text p{
+    font-size: 1.1rem;
+  }
+
 }
 @media (max-width: 1200px) {
   .Agencies .agencies-images figure {
@@ -828,8 +1146,6 @@ font-weight: 400;
     padding-bottom: 25px;
   }
   .swiper-buttons {
-    /* margin-top: 20px; */
-    /* padding: 20px 0 0px 0; */
     bottom: 5px;
     left: 50%;
     transform: translateX(-50%);
@@ -840,6 +1156,66 @@ font-weight: 400;
   .Customer .Customer-main h1 {
     font-size: 2rem;
   }
+  .appointment-text h1 {
+    font-size: 2rem;
+  }
+  .Pricing .nav-tabs .nav-link {
+    font-size: 18px;
+  }
+  .Pricing .accordion-item .accordion-button {
+    font-size: 20px;
+  }
+  .Pricing .tab-content{
+    margin-top: 30px;
+  }
+  .Asked .accordion-buttons .accordion-button {
+font-size: 1rem;
+  }
+  .NewsLetter .Newsltter-Head h1 {
+    font-size: 2rem;
+  }
+  .NewsLetter .Newsltter-Head span {
+    font-size: 1.4rem;
+  }
+  .NewsLetter .form {
+    padding: 17px 10px 17px 18px;
+  }
+  .NewsLetter .form .btn {
+    padding: 10px 20px 10px 20px;
+    font-size: 16px;
+  }
+  .About-us .hero-text{
+  text-align: center;
+  }
+  .About-us .hero-text h1 {
+  font-size: 2rem;
+  }
+  .About-us .hero-text h2 {
+    font-size: 2rem;
+  }
+  .About-us .hero-text p {
+  padding-right: 0rem;
+  }
+  .About-us .hero-text .btn {
+    padding: 8px 25px 8px 25px;
+  }
+  .About-us .about-usImg img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+}
+.About-us{
+  height: 660px;
+}
+.Our-mission .mission-main h1{
+  font-size: 2.3rem;
+  text-align: center;
+}
+.contact .col-lg-8{
+  margin-top: 20px;
+}
 }
 @media (max-width: 768px) {
   .hero-text h1 {
@@ -867,5 +1243,14 @@ font-weight: 400;
   }
   .Asked .Customer-main p {
     padding: 20px 30px 0 30px;
+  }
+  .Pricing .accordion-content ul {
+    /* max-height: auto !important; */
+    max-height: none;
+    flex-flow: column;
+  }
+  .Pricing .accordian-price a {
+    font-size: 16px;
+    padding: 16px 20px;
   }
 }
