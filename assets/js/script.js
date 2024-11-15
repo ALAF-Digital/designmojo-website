@@ -236,3 +236,47 @@ var swiper = new Swiper(".myswiper7", {
     },
 });
 // Project End //
+
+
+// Development Slider //
+
+var swiper = new Swiper(".myswiper8", {
+    slidesPerView: "1",
+    spaceBetween: 16,
+    loop: true,
+    speed: 4000, 
+    freeMode: true,
+    // autoplay:true,
+    autoplay: {
+        delay: 0, 
+        disableOnInteraction: false,
+    },
+    allowTouchMove: false,
+    centeredSlides:true,
+    breakpoints: {
+        480: {
+            slidesPerView: 2,
+            spaceBetween: 5,
+        },
+        640: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+        },
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 15,
+        },
+        1024: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+        },
+        1440: {
+            slidesPerView: 5,
+            spaceBetween: 30,
+        },
+        2000: {
+            slidesPerView: 5,
+            spaceBetween: 20,
+        },
+    },
+});
