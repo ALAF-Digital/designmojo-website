@@ -1084,7 +1084,105 @@ padding: 40px 28px 40px 28px !important;
 }
 /* Development Slider Section End */
 
+/* Simple Pricing Section */
+.Pricing{
+  padding: 90px 0 90px 0;
+  background-color: #eee;
+}
+.Pricing .Pricing-Card{
+  border-radius: 10px;
+border: 1px solid #D4D4D4;
+}
+.Pricing-Card .Pricing-CardPrice{
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.Pricing-Card .Pricing-CardPrice p:nth-child(1){
+  font-family: "Hanken Grotesk", serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--text-color);
+}
+.Pricing-Card .Pricing-CardPrice sub{
+opacity: 0.6;
+font-size: 14px;
+font-weight: 400;
+}
+.Pricing-Card .Pricing-CardPrice p:nth-child(2){
+  font-family: "Hanken Grotesk", serif;
+  font-weight: 600;
+  color: var(--text-color);
+}
+.Pricing-Card .Pricing-CardPrice span{
+  font-family: "Hanken Grotesk", serif;
+  color: var(--text-color);
+  opacity: 0.6;
+  font-size: 14px;
+  font-weight: 400;
+  }
+.Pricing-Card .Price-Border{
+  border-bottom:1px solid #D4D4D4 ;
+}
+.Pricing-Card .Pricing-CardDetail{
+  padding: 32px;
+}
+.Pricing-Card .Pricing-CardDetail ul{
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.Pricing-Card .Pricing-CardDetail li{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.Pricing-Card .Pricing-CardDetail li i::before{
+  color: #fff;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  font-size: 12px;
+  text-align: center;
+  padding: 7px;
+}
+.Pricing-Card .Pricing-CardDetail p{
+  color: var(--text-color);
+  font-family: "Quicksand", sans-serif;
+}
+.Pricing-Card .Pricing-CardDetail a{
+   padding: 15px 0px 15px 0px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  text-align: center;
+  border-radius: 10px;
+border: 1px solid var(--primary-color);
+font-family: "Quicksand", sans-serif;
+color: var(--primary-color);
+font-weight: 600;
+}
+.Pricing-Card:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+.Pricing-Card:hover .Pricing-CardDetail li i::before {
+  background-color: #fff;
+  color: var(--primary-color);
+}
+.Pricing-Card:hover .Pricing-CardPrice p,
+.Pricing-Card:hover .Pricing-CardPrice span,
+.Pricing-Card:hover .Pricing-CardDetail p {
+  color: #fff;
+}
 
+.Pricing-Card:hover .Pricing-CardDetail a {
+  background-color: #fff;
+  color: var(--primary-color);
+  border: none;
+}
+/* Simple Pricing Section End */
 
 /* Development Page End */
 
