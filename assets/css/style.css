@@ -1184,7 +1184,89 @@ font-weight: 600;
 }
 /* Simple Pricing Section End */
 
+/* WordPress-Excellence */
+.WordPress-Excellence .WordPress-main{
+margin-bottom: 70px;
+text-align: center;
+}
+.WordPress-Excellence .WordPress-main h1{
+  color: var(--text-color);
+  font-family: "Hanken Grotesk", serif;
+  font-size: 3.8rem;
+  font-weight: 600;
+}
+.WordPress-Excellence .service-card{
+  background: rgba(255, 255, 255, 0.40);
+}
+.WordPress-Excellence .service-cardImg {
+bottom: 50px;
+left: unset;
+display: flex;
+flex-direction: column;
+gap: 15px;
+align-items: center;
+text-align: center;
+}
+.WordPress-Excellence .service-cardImg h1{
+  font-family: "Hanken Grotesk", serif;
+  color: var(--primary-color);
+  font-size: 2.3rem;
+  font-weight: 700;
+}
+.WordPress-Excellence .service-cardImg p{
+  padding: 0 30px 0 30px;
+  color: var(--text-color);
+  font-family: "Quicksand", sans-serif;
+}
+/* WordPress-Excellence end */
+
 /* Development Page End */
+
+
+/* Website Design Page */
+
+/* Hero section */
+.website-main .hero-text{
+position: relative;
+z-index: 1;
+}
+/* Hero section End */
+
+/* Web Presence Section */
+.Web-Presence{
+  padding: 90px 0 80px 0;
+}
+.Web-Presence .web-presenceContent{
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.Web-Presence .web-presenceContent .web-presenceImg img{
+  border-radius: 20px;
+background: #6A6EEC;
+backdrop-filter: blur(32px);
+padding: 20px;
+}
+.Web-Presence .web-presenceContent .web-presenceText h3{
+  color: var(--text-color);
+  font-size: 1.3rem;
+  font-family: "Hanken Grotesk", serif;
+  font-weight: 700;
+  width: 70%;
+}
+.Web-Presence .web-presenceContent .web-presenceText p{
+  color: var(--text-color);
+  font-family: "Quicksand", sans-serif;
+}
+/* Web Presence Section End */
+
+/* Price Section */
+.simple-pricing{
+  background: none;
+}
+/* Price Section End */
+
+/* Website Design Page End */
 
 /* Footer */
 .footer {
@@ -1304,7 +1386,12 @@ font-weight: 600;
   .Our-mission .mission-textMain .mission-text p{
     font-size: 1.1rem;
   }
-
+  .WordPress-Excellence .WordPress-main h1 {
+    font-size: 2.8rem;
+  }
+  .WordPress-Excellence .service-cardImg h1 {
+    font-size: 1.9rem;
+  }
 }
 @media (max-width: 1200px) {
   .Agencies .agencies-images figure {
@@ -1398,6 +1485,44 @@ font-size: 1rem;
 .contact .col-lg-8{
   margin-top: 20px;
 }
+.development-main{
+  height: 1250px;
+}
+.development-main .container{
+  margin-top: 16rem;
+ 
+}
+.development-main h2{
+  font-size: 2rem;
+}
+.development-main .hero-text h1{
+  font-size: 2.5rem;
+}
+.WordPress-Excellence .WordPress-main h1 {
+  font-size: 2rem;
+}
+.Services .Service-main h1 {
+  font-size: 2.5rem;
+}
+.website-main .hero-text{
+  text-align: center;
+  }
+  .website-main .hero-text .development-btn {
+    justify-content: center;
+  }
+  .website-main .about-usImg img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+}
+.website-main{
+  height: 880px;
+}
+.website-main .container {
+  margin-top: 0%;
+}
 }
 @media (max-width: 768px) {
   .hero-text h1 {
@@ -1434,5 +1559,11 @@ font-size: 1rem;
   .Pricing .accordian-price a {
     font-size: 16px;
     padding: 16px 20px;
+  }
+  .WordPress-Excellence .WordPress-main h1 {
+    font-size: 1.8rem;
+  }
+  .Services .Service-main h1 {
+    font-size: 2rem;
   }
 }
