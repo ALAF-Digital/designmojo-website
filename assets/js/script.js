@@ -280,3 +280,33 @@ var swiper = new Swiper(".myswiper8", {
         },
     },
 });
+
+// Development Slider End //
+
+
+// Our Slider //
+var swiper = new Swiper(".myswiper9", {
+    slidesPerView: "1",
+    spaceBetween: 16,
+    loop: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      }
+});
+
+// Our Slider End //
+
+
+
+// DropDown //
+
+document.querySelector(".nav-item.dropdownmy").addEventListener("click", () => {
+    document.querySelector("#shop-dropdown").classList.toggle("show")
+})
+document.querySelector(".nav-item.dropdownmy").addEventListener("mouseover", () => {
+    document.querySelector("#shop-dropdown").classList.toggle("show")
+})
+document.querySelector(".nav-item.dropdownmy").addEventListener("mouseout", () => {
+    document.querySelector("#shop-dropdown").classList.toggle("show")
+})

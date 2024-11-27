@@ -1270,12 +1270,123 @@ padding: 20px;
 
 
 /* Our Work Page */
-
+.Our-Work{
+  padding-top: 50px;
+}
 .Our-Work .our-workText h1{
-  
+  font-size: 2rem;
+  font-family: "Hanken Grotesk", serif;
+  font-weight: 600;
+  color: var(--text-color);
+
+}
+.Our-Work .our-workText p{
+  color: var(--text-color);
+  font-family: "Quicksand", sans-serif;
+  margin: 20px 0 30px 0;
+  /* padding-right: 9rem; */
+}
+.Our-Work .our-workText a{
+  background-color: var(--secondary-color);
+  color: #fff;
+  font-family: "Quicksand", sans-serif;
+    font-weight: 600;
+    letter-spacing: 1.1px;
+    font-size: 1.1rem;
+    padding: 15px 32px 15px 32px;
+    border-radius: 16px;
+}
+.Our-Work .our-workText a:hover{
+  background-color: var(--primary-color);
 }
 
+.Our-Work .our-card img{
+  border-radius: 20px;
+
+}
+.myswiper9 .swiper-pagination {
+  position: static !important;
+  margin-top: 20px;
+  }
+  .swiper-pagination-bullet {
+    height: 2px;
+    width: 30px;
+    border-radius: 0;
+    background-color: var(--primary-color); 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+  }
+  
+  
+  .swiper-pagination-bullet-active {
+    background-color: var(--secondary-color); 
+    transform: scale(1.2);
+  }
+  
 /* Our Work Page End */
+
+
+
+/* DropDown */
+
+/* .navbar .container{
+  position: relative;
+} */
+
+.shop-menu {
+  position: absolute;
+  top: calc(100% + 100px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  border-radius: 0px 0px 40px 40px;
+  background: #FFF;
+  box-shadow: 0px 2px 24.1px 0px rgba(0, 0, 0, 0.10);
+  padding: 2.5rem 0rem 2.5rem 2rem;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.shop-menu.show {
+  opacity: 1;
+  visibility: visible;
+  top: calc(100% + -30px);
+}
+
+.shop-menu .container-fluid {
+  max-width: 1600px;
+ 
+}
+.shop-menu h4 {
+  color: var(--primary-color);
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  font-family: "Hanken Grotesk", serif;
+  margin-bottom: 25px;
+}
+.shop-menu ul li {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.shop-menu ul li+li {
+  margin-top: 25px;
+}
+
+.shop-menu ul li a {
+  color: var(--text-color);
+  font-family: "Hanken Grotesk", serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+.shop-menu ul li p {
+  font-family: "Quicksand", sans-serif;
+  color: #6F6F6F;
+}
+/* DropDown End */
 
 /* Footer */
 .footer {
@@ -1400,6 +1511,21 @@ padding: 20px;
   }
   .WordPress-Excellence .service-cardImg h1 {
     font-size: 1.9rem;
+  }
+  .shop-menu {
+    width: 98%;
+  }
+  .shop-menu h4 {
+
+    font-size: 12px;
+
+  }
+  
+  .shop-menu ul li a {
+    font-size: 13px;
+  }
+  .shop-menu ul li p {
+    font-size: 13px;
   }
 }
 @media (max-width: 1200px) {
