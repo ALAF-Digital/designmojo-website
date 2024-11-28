@@ -301,12 +301,44 @@ var swiper = new Swiper(".myswiper9", {
 
 // DropDown //
 
-document.querySelector(".nav-item.dropdownmy").addEventListener("click", () => {
-    document.querySelector("#shop-dropdown").classList.toggle("show")
-})
-document.querySelector(".nav-item.dropdownmy").addEventListener("mouseover", () => {
-    document.querySelector("#shop-dropdown").classList.toggle("show")
-})
-document.querySelector(".nav-item.dropdownmy").addEventListener("mouseout", () => {
-    document.querySelector("#shop-dropdown").classList.toggle("show")
-})
+// document.querySelector(".nav-item.dropdownmy").addEventListener("click", () => {
+//     document.querySelector("#shop-dropdown").classList.toggle("show")
+// })
+// document.querySelector(".nav-item.dropdownmy").addEventListener("mouseover", () => {
+//     document.querySelector("#shop-dropdown").classList.toggle("show")
+// })
+// document.querySelector(".nav-item.dropdownmy").addEventListener("mouseout", () => {
+//     document.querySelector("#shop-dropdown").classList.toggle("show")
+// })
+
+
+
+const dropdownItem = document.querySelector(".nav-item.dropdownmy");
+const shopDropdown = document.querySelector("#shop-dropdown");
+let timeoutId;
+
+dropdownItem.addEventListener("click", () => {
+    shopDropdown.classList.toggle("show");
+});
+
+dropdownItem.addEventListener("mouseover", () => {
+    shopDropdown.classList.add("show");
+
+    // Clear any existing timeout
+    clearTimeout(timeoutId);
+
+    // Set a new timeout for 10 seconds
+    timeoutId = setTimeout(() => {
+        shopDropdown.classList.remove("show");
+    }, 3000); // 6000 milliseconds = 6 seconds
+});
+
+dropdownItem.addEventListener("mouseout", () => {
+    // Clear the timeout when mouse leaves the dropdown
+    clearTimeout(timeoutId);
+
+    // Remove the "show" class after the timeout
+    timeoutId = setTimeout(() => {
+        shopDropdown.classList.remove("show");
+    }, 3000); // 6000 milliseconds = 6 seconds
+});
