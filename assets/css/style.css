@@ -539,7 +539,8 @@ body {
   position: relative;
 }
 
-.Pricing .accordion-item .accordion-button::after {
+.Pricing .accordion-item .accordion-button::after,
+.Pricing .accordion-item:has(.accordion-collapse.show) .accordion-button::after {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -556,6 +557,7 @@ body {
   right: 10px;
   top: 50%;
   transform: translateY(-50%);
+ 
 }
 
 .Pricing .accordion-item .accordion-button.collapsed::after {
@@ -1628,7 +1630,8 @@ background-blend-mode: hue, normal; */
     width: 98%;
   }
   .shop-menu h4 {
-    font-size: 12px;
+    font-size: 11px;
+    font-weight: bolder;
   }
 
   .shop-menu ul li a {
